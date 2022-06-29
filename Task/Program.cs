@@ -1,4 +1,4 @@
-﻿string[] arr = { "sad", "1234", "^^^@!", "X3D" };
+﻿string[] arr = { "saууd", "1234", "^^^@!", "X3ууD" };
 string[] Vyvod(string[] arr)
 {
     int count = 1;
