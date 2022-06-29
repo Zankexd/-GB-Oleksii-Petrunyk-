@@ -16,10 +16,14 @@ string[] Vyvod(string[] arr)
     if (AnotherArr.Length>0)for (int k = 0; k < AnotherArr.Length; k++)Console.Write($" {AnotherArr[k],2}");   
     return AnotherArr;        
 }
-
+Console.WriteLine("Проверка на первого массива по условиям ТЗ и Запись его в новый массив.");
+Console.Write("arr =");
 string[]argus=Vyvod(arr);
 Console.WriteLine();
-Console.WriteLine();
+Console.WriteLine("-----------");
+Console.WriteLine("-----------");
+Console.WriteLine("Проверка коректной записи в массив.");
+Console.Write("Массив argus=");
 for(int i=0;i<argus.Length;i++)
 {
     Console.Write($" {argus[i],2}");
