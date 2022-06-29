@@ -2,33 +2,19 @@
 string[] Vyvod(string[] arr)
 {
     int count = 1;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (arr[i].Length <= 3)
-        {
-            count = +1;
-        }
-    }
-    
+    int LengthFirstArray=arr.Length;
+    for (int i = 0; i < LengthFirstArray; i++)if (arr[i].Length <= 3)count = +1;
     string[] AnotherArr = new string[count+1];
-  
-    for (int j = 0; j < arr.Length; j++)
+     for (int j = 0; j < arr.Length; j++)
     {
         if (arr[j].Length <= 3)
         {
             AnotherArr[count] = arr[j];
             count -=1;
         }
-    }
-    if (AnotherArr.Length>0)
-    {
-    for (int k = 0; k < AnotherArr.Length; k++)
-    {  
-       Console.Write($" {AnotherArr[k],2}");
-    }
-    }
-    return AnotherArr;
-    
+    }    
+    if (AnotherArr.Length>0)for (int k = 0; k < AnotherArr.Length; k++)Console.Write($" {AnotherArr[k],2}");   
+    return AnotherArr;        
 }
 
 string[]argus=Vyvod(arr);
